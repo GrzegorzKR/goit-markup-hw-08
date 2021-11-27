@@ -12,6 +12,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+  border-color: yellow;
 }
 
 h1,
@@ -104,6 +105,7 @@ img {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 .btn {
