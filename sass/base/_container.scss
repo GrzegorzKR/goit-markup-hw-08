@@ -1,5 +1,5 @@
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   height: 100%;
   margin: 0 auto;
@@ -7,8 +7,28 @@
   justify-content: center;
   align-items: center;
 }
-
-
 .container_column {
   flex-direction: column;
+  padding: 0 42px;
 }
+
+
+@media screen and (min-width: 768px){
+
+ 
+.container_column {
+    padding: 0 186px;
+}
+}
+
+@media screen and (min-width: 1200px){
+  .container  {
+    max-width: 1200px;
+    
+  }
+  .container_column {
+  flex-direction: column;
+  padding: 0 452px;
+}
+}
+
