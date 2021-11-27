@@ -1,5 +1,6 @@
 button {
   cursor: pointer;
+  border: none;
 }
 
 .btn {
@@ -28,5 +29,5 @@ button {
 }
 
 .btn_color {
-  background: $main-color;
+  background: red;
 }
