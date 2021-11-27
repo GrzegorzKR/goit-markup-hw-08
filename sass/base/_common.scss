@@ -1,0 +1,30 @@
+body {
+  font-family: $main-font;
+  color: $font-color;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.figure {
+  margin: 0;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}

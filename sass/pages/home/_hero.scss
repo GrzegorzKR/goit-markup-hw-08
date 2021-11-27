@@ -1,0 +1,25 @@
+.hero {
+  height: 600px;
+  background: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/header-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__tittle {
+  width: 696px;
+  left: 452px;
+  bottom: 280px;
+
+  font-family: $main-font;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
