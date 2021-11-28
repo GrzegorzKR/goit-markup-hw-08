@@ -8,16 +8,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 1;
-}
 
-.modal__close-btn {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 8px;
-  top: 8px;
-  border-radius: 50%;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+  &__close-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
 }

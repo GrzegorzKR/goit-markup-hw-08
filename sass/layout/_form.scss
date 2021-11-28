@@ -1,100 +1,93 @@
 .form {
   text-align: center;
+  &__header {
+    font-family: $main-font;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+  }
+  &__label {
+    display: block;
+    font-style: $main-font;
+    color: #757575;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    line-height: 1.167;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    &_center {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__textarea {
+    outline: none;
+    height: 120px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    &::placeholder {
+      font-family: $main-font;
+      font-size: 12px;
+      line-height: 1.167;
+      letter-spacing: 0.01em;
+      color: #75757580;
+    }
+  }
+  &__link {
+    color: $main-color;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 14px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus,
+    &:hover,
+    &:focus {
+      fill: $main-color;
+      border-color: $main-color;
+    }
+  }
+  &_icon {
+    margin-right: 15px;
+  }
+  &__regulations {
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #757575;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 15px;
+      border: 2px solid black;
+      border-radius: 2px;
+    }
+  }
 }
 
-.form__header {
-  font-family: $main-font;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  margin-top: 0;
-}
-
-.form__label {
-  display: block;
-  font-style: $main-font;
-  color: #757575;
-  font-size: 12px;
-  letter-spacing: 0.01em;
-  text-align: left;
-  line-height: 1.167;
-  margin-top: 10px;
-  margin-bottom: 4px;
-}
-
-.form__input {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  margin-bottom: 10px;
-  padding: 0 14px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__input:hover,
-.form__input:focus,
-.form__textarea:hover,
-.form__textarea:focus {
-  fill: $main-color;
-  border-color: $main-color;
-}
 .input {
   outline: none;
   width: 100%;
   border: none;
-}
-
-.form__label_center {
-  display: flex;
-  justify-content: center;
-}
-
-.form__textarea {
-  outline: none;
-  height: 120px;
-  width: 100%;
-  resize: none;
-  margin-bottom: 20px;
-  padding: 12px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.form__textarea::placeholder {
-  font-family: $main-font;
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.01em;
-  color: #75757580;
-}
-.form__link {
-  color: $main-color;
-}
-.form__regulations {
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.form__icon {
-  margin-right: 15px;
-}
-
-.form__regulations::before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid black;
-  border-radius: 2px;
 }
 
 .form-checkbox:checked + .form__regulations::before {

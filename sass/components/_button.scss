@@ -23,11 +23,12 @@ button {
   letter-spacing: 0.06em;
 
   color: #ffffff;
-}
-.btn-icon {
-  margin-left: 24px;
-}
 
-.btn_color {
-  background:$main-color;
+  &-icon {
+    margin-left: 24px;
+  }
+
+  &_color {
+    background: $main-color;
+  }
 }

@@ -1,91 +1,49 @@
 @media screen and (min-width: 768px) {
   .navigation {
-  display: flex;
- 
-  margin-right: 119px;
+    display: flex;
+
+    margin-right: 119px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 282px;
+    margin-left: 83px;
+    &__link {
+      color: $font-color;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &_active {
+        color: $main-color;
+        position: relative;
+        &::after {
+          position: absolute;
+          top: 45px;
+          content: "";
+          display: block;
+          width: 58px;
+          height: 4px;
+          background: #2196f3;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+
+  .menu__item,
+  .contact {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02rem;
+    fill: #757575;
+    margin-right: 15px;
+  }
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  width: 282px;
-}
-
-.menu__item,
-.contact {
-  font-family: $main-font;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02rem;
-  fill: #757575;
-  margin-right: 15px;
-}
-
-.menu__link {
-  color: $font-color;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu__link_active {
-  color: $main-color;
-  position: relative;
-}
-
-.menu__link_active::after {
-  position: absolute;
-  top: 45px;
-  content: '';
-  display: block;
-  width: 58px;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-}
-}
-/*
 @media screen and (min-width: 1200px) {
-.navigation {
-  display: flex;
-  width: 254px;
-  margin-right: 345px;
+  .menu {
+    margin-left: 0px;
+  }
 }
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  width: 248px;
-}
-
-.menu__item,
-.contact {
-  font-family: $main-font;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02rem;
-  fill: #757575;
-}
-
-.menu__link {
-  color: $font-color;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu__link_active {
-  color: $main-color;
-  position: relative;
-}
-
-.menu__link_active::after {
-  position: absolute;
-  top: 45px;
-  content: '';
-  display: block;
-  width: 58px;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-}
-}
-*/
