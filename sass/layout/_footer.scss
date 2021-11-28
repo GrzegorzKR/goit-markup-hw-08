@@ -134,12 +134,9 @@
   .adres__list-item {
     margin-top: 9px;
   }
-  .contacts {
-    margin-right: 72px;
-  }
 
   .socials-footer {
-    margin-left: 72px;
+    margin-left: 70px;
     margin-top: 0px;
   }
 
@@ -193,7 +190,6 @@
 @media screen and (min-width: 1200px) {
   .footer {
     padding: 60px 215px;
-
     background: #2f303a;
   }
 
@@ -204,17 +200,15 @@
   .footer .container {
     justify-content: flex-start;
     flex-wrap: nowrap;
+    display: flex;
     align-items: baseline;
-  }
-
-  .contacts {
-    margin-right: 70px;
+    padding: 0 15px;
   }
 
   .contacts__adres {
     margin-top: 20px;
     margin-bottom: 9px;
-    text-align: center;
+    text-align: left;
     font-family: $main-font;
     font-style: normal;
     font-size: 14px;
@@ -223,6 +217,9 @@
     color: #ffffff;
   }
 
+  .contacts__list {
+    text-align: left;
+  }
   .contacts__list-item {
     margin-top: 9px;
   }
@@ -245,6 +242,7 @@
     font-family: $main-font;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: left;
     color: #ffffff;
     font-size: 14px;
     line-height: 1.142;
@@ -258,6 +256,7 @@
 
   .newsletter__wrapper {
     display: flex;
+    justify-content: start;
   }
 
   .newsletter button {

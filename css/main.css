@@ -84,10 +84,11 @@ img {
   .container {
     max-width: 1200px;
   }
-  .container_column {
-    flex-direction: column;
-    padding: 0 452px;
-  }
+}
+
+.container_column {
+  flex-direction: column;
+  padding: 0 452px;
 }
 
 .backdrop {
@@ -411,11 +412,8 @@ button {
   .adres__list-item {
     margin-top: 9px;
   }
-  .contacts {
-    margin-right: 72px;
-  }
   .socials-footer {
-    margin-left: 72px;
+    margin-left: 70px;
     margin-top: 0px;
   }
   .socials-footer__title,
@@ -472,21 +470,23 @@ button {
   .footer .container {
     justify-content: flex-start;
     flex-wrap: nowrap;
+    display: flex;
     align-items: baseline;
-  }
-  .contacts {
-    margin-right: 70px;
+    padding: 0 15px;
   }
   .contacts__adres {
     margin-top: 20px;
     margin-bottom: 9px;
-    text-align: center;
+    text-align: left;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: #ffffff;
+  }
+  .contacts__list {
+    text-align: left;
   }
   .contacts__list-item {
     margin-top: 9px;
@@ -507,6 +507,7 @@ button {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: left;
     color: #ffffff;
     font-size: 14px;
     line-height: 1.142;
@@ -518,6 +519,7 @@ button {
   }
   .newsletter__wrapper {
     display: flex;
+    justify-content: start;
   }
   .newsletter button {
     margin-top: 0;
@@ -951,6 +953,10 @@ button {
 
 .team__list-item:last-child {
   margin-right: 0px;
+}
+
+.team__img {
+  max-width: 270px;
 }
 
 .team__list-item-workername {
