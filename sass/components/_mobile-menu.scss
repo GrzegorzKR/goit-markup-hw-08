@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   padding: 48px 40px;
   background-color: #fff;
   transition-property: opacity, visibility;
@@ -45,19 +45,20 @@
 }
 .mobile-social {
   display: flex;
+  &__item:not(:first-child) {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    color: $main-color;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
 }
-.mobile-social__item:not(:first-child) {
-  border-left: 1px solid rgba(33, 33, 33, 0.2);
-  padding-left: 10px;
-  margin-left: 10px;
-}
-.mobile-social__link {
-  font-weight: 500;
-  font-size: 18px;
-  color: $main-color;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-}
+
 .btn__close {
   position: absolute;
   width: 19px;
@@ -66,4 +67,7 @@
   top: 21px;
   background: #fff;
   box-sizing: border-box;
+  &:hover {
+      fill: $main-color;
+  }
 }

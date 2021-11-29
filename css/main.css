@@ -128,7 +128,7 @@ img {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   padding: 48px 40px;
   background-color: #fff;
   transition-property: opacity, visibility;
@@ -200,6 +200,10 @@ img {
   top: 21px;
   background: #fff;
   box-sizing: border-box;
+}
+
+.btn__close:hover {
+  fill: #2196f3;
 }
 
 .modal {
