@@ -1,5 +1,7 @@
 .footer {
   background: #2f303a;
+  min-width: 320px;
+  width: 100%;
   & .container {
     flex-direction: column;
     justify-content: center;
@@ -108,9 +110,10 @@
 
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 60px 215px;
     background: #2f303a;
+
     & .container {
+      margin: 0 auto;
       align-items: baseline;
       padding: 0 15px;
       width: 1200px;

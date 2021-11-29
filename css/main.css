@@ -56,6 +56,7 @@ img {
 
 .container {
   width: 100%;
+  min-width: 320px;
   padding: 0 15px;
   height: 100%;
   margin: 0 auto;
@@ -294,6 +295,8 @@ button {
 
 .footer {
   background: #2f303a;
+  min-width: 320px;
+  width: 100%;
 }
 
 .footer .container {
@@ -405,10 +408,10 @@ button {
 
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 60px 215px;
     background: #2f303a;
   }
   .footer .container {
+    margin: 0 auto;
     align-items: baseline;
     padding: 0 15px;
     width: 1200px;
