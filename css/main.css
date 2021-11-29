@@ -122,6 +122,86 @@ img {
   transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #fff;
+  transition-property: opacity, visibility;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.mobile-menu__link {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02rem;
+}
+
+.mobile-menu__link:hover {
+  color: #2196f3;
+}
+
+.mobile-menu__item {
+  margin-bottom: 36px;
+}
+
+.mobile-menu__is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-contacts {
+  margin-top: 302px;
+  margin-bottom: 64px;
+}
+
+.mobile-contacts__link {
+  font-size: 24px;
+  color: #757575;
+}
+
+.mobile-contacts__link_accent {
+  font-size: 36px;
+  color: #2196f3;
+}
+
+.mobile-social {
+  display: flex;
+}
+
+.mobile-social__item:not(:first-child) {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.mobile-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2196f3;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.btn__close {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  right: 25px;
+  top: 21px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
 .modal {
   position: absolute;
   width: 450px;
@@ -245,6 +325,14 @@ button {
 
 .socials-list__item:last-child {
   margin-right: 0;
+}
+
+.icon-menu:hover {
+  fill: #2196f3;
+}
+
+.icon-menu__button {
+  background-color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -648,7 +736,7 @@ button {
   color: #ffffff;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-mobile-img@2x.jpg");
     background-size: cover;
@@ -682,6 +770,13 @@ button {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg@2x.jpg");
+    background-size: cover;
   }
 }
 
